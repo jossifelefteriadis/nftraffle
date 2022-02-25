@@ -1,38 +1,68 @@
-.App {
+@font-face {
+  font-family: "puja";
+  src: url(./font/Puja-17-06-2006.ttf) format("woff2");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=VT323&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  /* font-family: "puja"; */
+  font-family: "Montserrat", sans-serif;
+}
+
+.comingsoon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #171717;
+  min-height: 100vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box {
+  /* background-color: red; */
+  width: 42%;
+  min-height: 70vh;
+  /* font-size: 1rem; */
+  line-height: 150%;
+  /* letter-spacing: 1.1px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+  color: #5b4011;
+  font-size: 2.5rem;
+  margin: 5% 0;
+  font-family: "puja";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.signup_field {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 250px;
+  height: 40px;
+  /* border-radius: 20%; */
+  border: none;
+  outline: none;
+  margin-top: 5%;
+  margin-bottom: 1%;
 }
 
-.App-link {
-  color: #61dafb;
+::placeholder {
+  color: #000000;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.signup_bth {
+  background-color: #5b4011;
+  width: 250px;
+  height: 40px;
+  /* border-radius: 50%; */
+  border: none;
+  outline: none;
+  margin-bottom: 5%;
 }
