@@ -73,3 +73,25 @@
 a {
   color: #1da1f2;
 }
+
+@media only screen and (max-width: 650px) {
+  .box {
+    width: 70%;
+    min-height: 70vh;
+    line-height: 150%;
+  }
+
+  .title {
+    line-height: 90%;
+  }
+
+  .signup_field {
+    width: 150px;
+    height: 30px;
+  }
+
+  .signup_btn {
+    width: 150px;
+    height: 30px;
+  }
+}
