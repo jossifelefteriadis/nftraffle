@@ -1,6 +1,5 @@
 import React from "react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
-// require("dotenv").config();
 
 const u = process.env.REACT_APP_MAILCHIMP_U;
 const id = process.env.REACT_APP_MAILCHIMP_ID;

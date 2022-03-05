@@ -19,17 +19,6 @@ const ComingSoon = () => (
           to get notified for when it's time.
         </p>
       </section>
-      {/* <section>
-        <input
-          class="signup_field"
-          type="search"
-          placeholder="put email here"
-        />
-        <br />
-        <button type="submit" class="signup_bth">
-          SIGN UP
-        </button>
-      </section> */}
       <MailchimpContainer />
       <section>
         <p>
