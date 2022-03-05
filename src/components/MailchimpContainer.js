@@ -1,5 +1,9 @@
 import React from "react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
+// require("dotenv").config();
+
+const u = process.env.REACT_APP_MAILCHIMP_U;
+const id = process.env.REACT_APP_MAILCHIMP_ID;
 
 const CustomForm = ({ status, message, onValidated }) => {
   let email;
@@ -32,7 +36,7 @@ const CustomForm = ({ status, message, onValidated }) => {
           placeholder="put email here"
         />
       </section>
-      <button class="signup_btn" label="subscribe" onClick={submit}>
+      <button className="signup_btn" label="subscribe" onClick={submit}>
         SIGN UP
       </button>
     </section>
@@ -40,7 +44,7 @@ const CustomForm = ({ status, message, onValidated }) => {
 };
 
 const MailchimpContainer = () => {
-  const url = `https://hotmail.us14.list-manage.com/subscribe/post?u=79596d12ef3d1416aa6defd18&id=dad8246b1a`;
+  const url = `https://hotmail.us14.list-manage.com/subscribe/post?u=${u}&id=${id}`;
 
   return (
     <section>
