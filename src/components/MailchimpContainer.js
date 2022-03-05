@@ -1,9 +1,6 @@
 import React from "react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 
-const u = process.env.REACT_APP_MAILCHIMP_U;
-const id = process.env.REACT_APP_MAILCHIMP_ID;
-
 const CustomForm = ({ status, message, onValidated }) => {
   let email;
 
@@ -43,6 +40,8 @@ const CustomForm = ({ status, message, onValidated }) => {
 };
 
 const MailchimpContainer = () => {
+  const u = process.env.REACT_APP_MAILCHIMP_U;
+  const id = process.env.REACT_APP_MAILCHIMP_ID;
   const url = `https://hotmail.us14.list-manage.com/subscribe/post?u=${u}&id=${id}`;
 
   return (
