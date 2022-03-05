@@ -40,9 +40,9 @@ const CustomForm = ({ status, message, onValidated }) => {
 };
 
 const MailchimpContainer = () => {
-  const u = process.env.REACT_APP_MAILCHIMP_U;
-  const id = process.env.REACT_APP_MAILCHIMP_ID;
-  const url = `https://hotmail.us14.list-manage.com/subscribe/post?u=${u}&id=${id}`;
+  //   const u = process.env.REACT_APP_MAILCHIMP_U;
+  //   const id = process.env.REACT_APP_MAILCHIMP_ID;
+  const url = `https://hotmail.us14.list-manage.com/subscribe/post?u=79596d12ef3d1416aa6defd18&id=dad8246b1a`;
 
   return (
     <section>
