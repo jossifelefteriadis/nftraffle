@@ -15,7 +15,7 @@ const ComingSoon = () => (
         </p>
         <br />
         <p>
-          We aim on launching around end of March. Make sure you sign up below
+          We aim on launching around end of April. Make sure you sign up below
           to get notified for when it's time.
         </p>
       </section>
